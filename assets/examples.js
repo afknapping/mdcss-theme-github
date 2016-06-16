@@ -113,8 +113,9 @@ examples.lang = {
 			idoc.body.setAttribute('style', examples.bodycss);
       iframe.setAttribute('class', 'docs-example clearfix');
 		})
-
+		
 		if (conf.width) style.width = String(conf.width);
+		style.resize = 'both';
 
 		// set iframe height based on content
 		var documentElement = idoc.documentElement;
